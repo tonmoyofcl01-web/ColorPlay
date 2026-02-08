@@ -1,0 +1,130 @@
+/* -------------------------
+   Body / Background
+---------------------------*/
+body {
+    background-color: #0d0d0d; /* deep dark theme */
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------------
+   Floating Headings
+---------------------------*/
+h1 {
+    margin: 40px 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+/* Individual heading fonts */
+.serif h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 4rem; /* bigger, luxurious */
+}
+
+.sans-serif h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 3.5rem;
+}
+
+.stylish h1 {
+    font-family: 'Pacifico', cursive; /* stylish font, import from Google Fonts if needed */
+    font-size: 3.5rem;
+}
+
+/* -------------------------
+   Buttons Container
+---------------------------*/
+.generateBtn, .copyBtn, .saveBtn, .deleteBtn {
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+button {
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 28px;
+    margin: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #3a3a3a, #222);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+}
+
+/* -------------------------
+   Saved Palettes
+---------------------------*/
+#saved {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    font-size: 14px;
+}
+
+/* Individual saved palette items */
+#saved div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(255,255,255,0.05);
+}
+
+/* Delete button inside saved palette */
+#saved div button {
+    background: #ff4c4c;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    margin-left: 15px;
+}
+
+#saved div button:hover {
+    background: #ff1c1c;
+    transform: translateY(-1px);
+}
+
+/* -------------------------
+   Optional: Smooth Scrollbar for Saved
+---------------------------*/
+#saved::-webkit-scrollbar {
+    width: 6px;
+}
+
+#saved::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+#saved::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* -------------------------
+   Aligning all the headings
+---------------------------*/
+.text{
+    text-align: center;
+}
